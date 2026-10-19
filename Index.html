@@ -1,1 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Guardião das Estrelas</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- Tela Inicial -->
+    <div id="telaInicial">
+        <h1>🌌 O Guardião das Estrelas</h1>
+        <p>Use as setas ← → para mover a nave</p>
+        <p>Colete as estrelas ⭐ e desvie dos meteoros ☄️</p>
+        <button onclick="iniciarJogo()">🚀 Iniciar Jogo</button>
+    </div>
+
+    <!-- Tela do Jogo -->
+    <div id="telaJogo" style="display: none;">
+        <div class="placar">
+            <span>Pontos: <span id="pontos">0</span></span>
+            <span>Vidas: <span id="vidas">❤️❤️❤️</span></span>
+        </div>
+        <div id="areaJogo">
+            <div id="nave"></div>
+        </div>
+        <button id="botaoAudio" onclick="alternarAudio()">🔊 Som</button>
+    </div>
+
+    <!-- Tela de Game Over -->
+    <div id="telaGameOver" style="display: none;">
+        <h2>🌙 Fim de Jogo!</h2>
+        <p>Sua pontuação: <span id="pontuacaoFinal">0</span></p>
+        <button onclick="reiniciarJogo()">🔄 Jogar Novamente</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
 
